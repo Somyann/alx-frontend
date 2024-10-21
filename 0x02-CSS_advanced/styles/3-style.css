@@ -4,14 +4,14 @@
   color-white: #ffffff;
   color-light-grey: #f3f3f3;
   color-dark-grey: #353535;
-  text-coloor:  var(--color-black);
+  text-coloor:  color-black;
 }
 .section-tagline{
-  color: var(--color-primary);
+  color: color-primary;
 }
 .card-category{
-  color: var(--color-primary);
+  color: color-primary;
 }
 body{
-  color: var(--text-color);
+  color: text-color;
 }
