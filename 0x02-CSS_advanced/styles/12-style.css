@@ -22,7 +22,7 @@
   --section-title-margin: 0;
   --section-title-color: black;
 }
-
+/* 
 body {
 color: var(--text-color);
 font-family: var(--font-family-base);
@@ -36,7 +36,7 @@ a {
 }
 .section-header {
   text-align: var(--section-header-align);
-}
+} */
 .section-title {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xx-large);
@@ -44,11 +44,12 @@ a {
   margin: var(--section-title-margin);
   color: var(--section-title-color);
 }
-.section-tagline,
+/* .section-tagline,
 .card-category {
-  color: var(--color-primary);
-}
+  color: var(--color-primary); */
+
 .section-tagline {
+  color: var(--color-primary);
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);

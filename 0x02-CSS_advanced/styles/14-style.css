@@ -1,0 +1,19 @@
+.section-tagline {
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+}
+/* Target the visited state for the link */
+a:visited {
+  font-style: italic;
+}
+
+/* Target the hover state for the link */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Target the active state for the link */
+a:active {
+  background-color: var(--color-light-grey);
+}

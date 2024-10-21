@@ -53,6 +53,11 @@ a {
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
 }
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
 /* Target the visited state for the link */
 a:visited {
   font-style: italic;
