@@ -1,4 +1,7 @@
 /* Document.css*/
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --color-primary: #d73953;
@@ -24,6 +27,7 @@
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
   --background-color: var(--color-light-grey);
+  --font-style: italic;
 }
 /* font and body declaration*/
 body {
@@ -32,6 +36,7 @@ font-family: var(--font-family-base);
 font-size: var(--font-size-medium);
 font-weight: var(--font-weight-regular);
 line-height: var(--line-height-base);
+
 }
 /* Target the link element */
 a[href] {
