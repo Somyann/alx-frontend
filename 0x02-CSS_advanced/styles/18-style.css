@@ -94,7 +94,10 @@ nav {
   list-style: none;
   text-align: center;
 }
-
+.nav ul {
+  list-style: none; 
+  padding: 0;
+}
 nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
@@ -106,7 +109,7 @@ nav .nav-item {
 
 nav .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: calc(0.5 * 1rem) calc(1rem);
 }
 
 nav .nav-link:hover {
