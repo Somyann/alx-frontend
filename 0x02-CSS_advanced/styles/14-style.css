@@ -1,29 +1,60 @@
+/* Include Normalize.css before your custom styles (from the CDN) */
+
 /* Document
    ========================================================================== */
 
    html {
     scroll-behavior: smooth;
   }
-  /* Sections
-   ========================================================================== */
-
   
-.section-tagline {
-  font-family: var(--font-family-title);
-  text-transform: var(--section-tagline-transform);
-  font-weight: var(--font-weight-bold);
-}
-/* Target the visited state for the link */
-a:visited {
-  font-style: italic;
-}
-
-/* Target the hover state for the link */
-a:hover {
-  text-decoration: underline;
-}
-
-/* Target the active state for the link */
-a:active {
-  background-color: var(--color-light-grey);
-}
+  :root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-title-margin: 0;
+    --section-tagline-transform: uppercase;
+    --section-title-color: var(--color-black);
+    --background-color: var(--color-light-grey);
+    --font-style: italic;
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  .section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  /* Target the visited state for the link */
+  a:visited {
+    font-style: italic;
+  }
+  
+  /* Target the hover state for the link */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Target the active state for the link */
+  a:active {
+    background-color: var(--color-light-grey);
+  }
+  
