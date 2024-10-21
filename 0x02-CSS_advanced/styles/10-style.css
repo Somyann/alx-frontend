@@ -34,6 +34,7 @@ a {
 .section-header {
   text-align: var(--section-header-align);
 }
-.section-tagline{
+.section-tagline,
+.card-category {
   color: var(--color-primary);
 }
