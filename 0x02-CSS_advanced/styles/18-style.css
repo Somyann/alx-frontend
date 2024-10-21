@@ -1,104 +1,33 @@
-/* Custom properties */
-html {
-  scroll-behavior: smooth;
-}
 :root {
-  --color-primary: #d73953;
-  --color-black: #090909;
-  --color-white: #ffffff;
-  --color-light-grey: #f3f3f3;
-  --color-dark-grey: #353535;
-  --text-color: var(--color-black);
-  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-size-small: 1.2rem;
-  --font-size-medium: 1.6rem;
-  --font-size-large: 1.8rem;
-  --font-size-x-large: 2.3rem;
-  --font-size-xx-large: 4.8rem;
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --line-height-small: 1.2;
-  --line-height-base: 1.5;
-  --line-height-big: 1.8;
-  --section-header-align: center;
-  --section-tagline-transform: uppercase;
-  --section-title-margin: 0;
-  --section-title-color: black;
-  --section-padding: 5rem 0;
-  --section-header-padding: 0 0 3rem;
-  --section-body-padding: 0 0 3rem;
-  --section-footer-padding: 3rem 0 0;
-  --section-footer-align: center;
-  --footer-padding: 5rem 0 1rem;
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 4%;
+  --nav-item-letter-spacing: 0.04em; /* 4% of the root element */
   --nav-item-display: inline-block;
-  --nav-item-margin: 0 0 3rem 0;
+  --nav-item-margin: 3rem 0 0; /* 3 times the root element on the bottom */
   --nav-item-link-hover: var(--color-primary);
 }
-body {
-  color: var(--text-color);
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-base);
-  }
-  a {
-    color: var(--text-color);
-    text-decoration: none;
-  }
-  .section-header {
-    text-align: var(--section-header-align);
-    padding: var(--section-header-padding);
-  }
-  .section-body {
-    padding: var(--section-body-padding);
-  }
-  .section-footer {
-    padding: var(--section-footer-padding);
-    text-align: var(--section-footer-align);
-  }
-  
-  .section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
-  }
-  .section-tagline,
-  .card-category {
-    color: var(--color-primary);
-  }
-  .section-tagline {
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold);
-  }
-  .container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+
+/* Targeting the navbar-menu class */
 .navbar-menu {
   float: right;
 }
 
-nav {
+/* For the nav class */
+.nav {
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-align: center;
+  text-align: center; /* Center align the text */
 }
+
+/* For the list in nav */
 .nav ul {
-  list-style: none; 
+  list-style: none; /* Remove default list styles */
   padding: 0;
 }
-nav .nav-item {
+
+/* For the nav-item class in nav */
+.nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
@@ -107,11 +36,13 @@ nav .nav-item {
   margin: var(--nav-item-margin);
 }
 
-nav .nav-link {
+/* For the nav-link class in nav */
+.nav-link {
   display: block;
-  padding: calc(0.5 * 1rem) calc(1rem);
+  padding: calc(0.5 * 1rem) calc(1rem); /* Half of root element for top and bottom, full for left and right */
 }
 
-nav .nav-link:hover {
+/* Hover state for nav-link */
+.nav-link:hover {
   color: var(--nav-item-link-hover);
 }
