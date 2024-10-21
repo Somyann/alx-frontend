@@ -22,7 +22,7 @@
   --section-header-align: center;
   --section-tagline-transform: uppercase;
   --section-title-margin: 0;
-  --section-title-color: black;
+  --section-title-color: var(--color-black);
 }
 /* font and body declaration*/
 body {
@@ -33,7 +33,7 @@ font-weight: var(--font-weight-regular);
 line-height: var(--line-height-base);
 }
 /* Target the link element */
-a {
+a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
