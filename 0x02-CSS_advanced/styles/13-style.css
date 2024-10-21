@@ -1,3 +1,5 @@
+/* Document.css*/
+
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -22,7 +24,7 @@
   --section-title-margin: 0;
   --section-title-color: black;
 }
-
+/* font and body declaration*/
 body {
 color: var(--text-color);
 font-family: var(--font-family-base);
@@ -30,10 +32,12 @@ font-size: var(--font-size-medium);
 font-weight: var(--font-weight-regular);
 line-height: var(--line-height-base);
 }
+/* Target the link element */
 a {
   color: var(--text-color);
   text-decoration: none;
 }
+/* Target the section-header class */
 .section-header {
   text-align: var(--section-header-align);
 }
@@ -44,11 +48,9 @@ a {
   margin: var(--section-title-margin);
   color: var(--section-title-color);
 }
-.section-tagline,
-.card-category {
-  color: var(--color-primary);
-}
+/* Target the section-tagline class */
 .section-tagline {
+  color: var(--color-primary);
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
