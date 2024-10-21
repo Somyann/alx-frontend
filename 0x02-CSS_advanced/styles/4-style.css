@@ -10,8 +10,3 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
 }
-
-/* Assuming you have a links declaration below this */
-a {
-  /* Your existing styles for links */
-}
