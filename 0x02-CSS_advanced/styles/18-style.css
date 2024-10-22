@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -31,37 +30,26 @@ html {
   --section-footer-padding: 3rem 0 0;
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
-  --nav-item-font-family: var(--font-family-title);
-  --nav-item-font-weight: var(--font-weight-bold);
-  --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 4%; /* Updated to 4% */
-  --nav-item-display: inline-block;
-  --nav-item-margin: 0 0 3rem 0; 
-  --nav-item-link-hover: var(--color-primary);
 }
 
 body {
-  color: var(--text-color);
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-base);
+color: var(--text-color);
+font-family: var(--font-family-base);
+font-size: var(--font-size-medium);
+font-weight: var(--font-weight-regular);
+line-height: var(--line-height-base);
 }
-
 a {
   color: var(--text-color);
   text-decoration: none;
 }
-
 .section-header {
   text-align: var(--section-header-align);
   padding: var(--section-header-padding);
 }
-
 .section-body {
   padding: var(--section-body-padding);
 }
-
 .section-footer {
   padding: var(--section-footer-padding);
   text-align: var(--section-footer-align);
@@ -74,59 +62,84 @@ a {
   margin: var(--section-title-margin);
   color: var(--section-title-color);
 }
-
 .section-tagline,
 .card-category {
   color: var(--color-primary);
 }
-
 .section-tagline {
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
 }
-
 .container {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Targeting the navbar-menu class */
-.navbar-menu {
-  float: right; /* Floats the navbar-menu to the right */
+/* Target the visited state for the link */
+a:visited {
+  font-style: italic;
 }
 
-/* For the nav class */
-.nav {
+/* Target the hover state for the link */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Target the active state for the link */
+a:active {
+  background-color: var(--color-light-grey);
+}
+
+.section {
+  padding: var(--section-padding);
+}
+.footer {
+  padding: var(--footer-padding);
+}
+:root {
+  ---nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 4%;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0; /* 3 times the root element on bottom, 0 elsewhere */
+  --nav-item-link-hover: var(--color-primary);
+}
+
+
+nav {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   text-align: center;
 }
 
-/* For the list in nav */
-nav.nav ul {
-  list-style: none;
+.navbar-menu {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styling */
   padding: 0;
+  margin: 0;
 }
 
-/* For the nav-item class in nav */
-nav .nav-item {
-  font-family: var(--nav-item-font-family);
-  font-weight: var(--nav-item-font-weight);
-  font-size: var(--nav-item-font-size);
-  letter-spacing: var(--nav-item-letter-spacing);
+.nav-item {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+  letter-spacing: calc(0.04 * 1rem); /* 4% of the root element */
   display: var(--nav-item-display);
-  margin: var(--nav-item-margin);
+  margin: calc(3 * 1rem) 0 0 0; /* 3 times the root element on top, 0 elsewhere */
 }
 
-/* For the nav-link class in nav */
-nav .nav-link {
+.nav-link {
   display: block;
-  padding: 50% var(--font-size-medium); 
+  padding: calc(0.5 * 1rem) var(--font-size-medium); 
+  text-decoration: none; /
 }
 
-/* Hover state for nav-link */
-nav .nav-link:hover {
+.nav-link:hover {
   color: var(--nav-item-link-hover);
 }
