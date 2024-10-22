@@ -1,9 +1,30 @@
 :root {
+  --header-padding: 4rem 0 0;
+  --header-logo-position: relative;
+  --header-logo-link-display: inline-block;
+  --header-logo-link-position: absolute;
+  --header-logo-link-top: -1rem;
+  --header-logo-link-left: 0;
   --color-white: #ffffff;
   --color-primary: #007bff;
-  /* Navbar Styles */
 }
-nav {
+
+.header {
+  padding: var(--header-padding);
+}
+
+.header-logo {
+  position: var(--header-logo-position);
+}
+
+.header-logo a {
+  display: var(--header-logo-link-display);
+  position: var(--header-logo-link-position);
+  top: var(--header-logo-link-top);
+  left: var(--header-logo-link-left);
+}
+
+.nav {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -19,7 +40,7 @@ nav {
   margin: 0;
 }
 
-nav.nav-item {
+.nav .nav-item {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-medium);
@@ -28,21 +49,21 @@ nav.nav-item {
   margin: calc(3 * 1rem) 0 0 0; /* 3 times the root element on top, 0 elsewhere */
 }
 
-nav.nav-link {
+.nav .nav-link {
   display: block;
   padding: calc(0.5 * 1rem) var(--font-size-medium); 
   text-decoration: none;
   position: relative;
 }
 
-nav.nav-link:hover {
-  color: var(--nav-item-link-hover); /* Hover color */
+.nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
   background-color: var(--color-primary);
   color: var(--color-white);
 }
 
 /* Pseudo-elements for nav-link */
-nav .nav-link::before {
+.nav .nav-link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -52,7 +73,7 @@ nav .nav-link::before {
   height: 20%;
 }
 
-nav .nav-item:hover .nav-link::before {
+.nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary); /* Hover background */
   width: 100%;
 }
