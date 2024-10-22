@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -33,65 +34,74 @@ html {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 0.04em;
+  --nav-item-letter-spacing: 4%; /* Updated to 4% */
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0; 
   --nav-item-link-hover: var(--color-primary);
 }
+
 body {
   color: var(--text-color);
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
-  }
-  a {
-    color: var(--text-color);
-    text-decoration: none;
-  }
-  .section-header {
-    text-align: var(--section-header-align);
-    padding: var(--section-header-padding);
-  }
-  .section-body {
-    padding: var(--section-body-padding);
-  }
-  .section-footer {
-    padding: var(--section-footer-padding);
-    text-align: var(--section-footer-align);
-  }
-  
-  .section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
-  }
-  .section-tagline,
-  .card-category {
-    color: var(--color-primary);
-  }
-  .section-tagline {
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold);
-  }
-  .container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.section-header {
+  text-align: var(--section-header-align);
+  padding: var(--section-header-padding);
+}
+
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
+}
+
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
+
+.section-tagline,
+.card-category {
+  color: var(--color-primary);
+}
+
+.section-tagline {
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Targeting the navbar-menu class */
 .navbar-menu {
-  float: right;
+  float: right; /* Floats the navbar-menu to the right */
 }
 
 /* For the nav class */
 .nav {
   margin: 0;
-  padding: 0;
-  text-align: center; /* Center align the text */
+  padding: 0; 
+  text-align: center;
 }
 
 /* For the list in nav */
@@ -101,7 +111,7 @@ nav.nav ul {
 }
 
 /* For the nav-item class in nav */
-nav.nav-item {
+nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
@@ -111,13 +121,12 @@ nav.nav-item {
 }
 
 /* For the nav-link class in nav */
-nav.nav-link {
+nav .nav-link {
   display: block;
-  padding: 50% 50% 100% 100%;
-} 
-
+  padding: 50% var(--font-size-medium); 
+}
 
 /* Hover state for nav-link */
-nav.nav-link:hover {
+nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
