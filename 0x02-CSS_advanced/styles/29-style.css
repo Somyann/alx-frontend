@@ -29,11 +29,9 @@
   padding: 0;
   text-align: center;
 }
-
 .navbar-menu {
   float: right;
 }
-
 .nav ul {
   list-style-type: none; /* Remove default list styling */
   padding: 0;
@@ -46,9 +44,8 @@
   font-size: var(--font-size-medium);
   letter-spacing: calc(0.04 * 1rem); /* 4% of the root element */
   display: var(--nav-item-display);
-  margin: calc(3 * 1rem) 0 0 0; /* 3 times the root element on top, 0 elsewhere */
+  margin: calc(3 * 1rem) 0 0 0; 
 }
-
 .nav .nav-link {
   display: block;
   padding: calc(0.5 * 1rem) var(--font-size-medium); 
@@ -72,9 +69,8 @@
   width: 0;
   height: 20%;
 }
-
 .nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-primary); /* Hover background */
+  background-color: var(--color-primary); 
   width: 100%;
 }
 

@@ -127,13 +127,13 @@ html {
     margin: calc(3 * 1rem) 0 0 0; /* 3 times the root element on top, 0 elsewhere */
   }
   
-  nav.nav-link {
+  .nav.nav-link {
     display: block;
     padding: calc(0.5 * 1rem) var(--font-size-medium); 
     text-decoration: none; /
   }
   
-  nav.nav-link:hover {
+  .nav.nav-link:hover {
     color: var(--nav-item-link-hover);
   }
 
