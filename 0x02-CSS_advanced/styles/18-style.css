@@ -106,7 +106,7 @@ a:active {
   padding: var(--footer-padding);
 }
 
-nav {
+.nav {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -122,7 +122,7 @@ nav {
   margin: 0;
 }
 
-nav.nav-item {
+.nav .nav-item {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-medium);
@@ -131,12 +131,12 @@ nav.nav-item {
   margin: calc(3 * 1rem) 0 0 0; /* 3 times the root element on top, 0 elsewhere */
 }
 
-nav.nav-link {
+.nav .nav-link {
   display: block;
   padding: calc(0.5 * 1rem) var(--font-size-medium); 
   text-decoration: none; /
 }
 
-nav.nav-link:hover {
+.nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
